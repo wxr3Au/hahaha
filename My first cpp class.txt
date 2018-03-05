@@ -1,0 +1,25 @@
+#include <iostream>  //预处理指令
+using namespace std;
+double sphere();  //声明sphere函数
+int main()  //定义主函数
+{
+   double result=sphere();  //调用sphere函数
+   cout<<"size="<<result<<"\n";  //输出size的值
+}
+double sphere()  //定义sphere函数，函数值为双精度型
+{
+   cout<<"Please input radius.";  //屏幕显示“请输入半径”
+   double r;  //变量r声明
+   cin>>r;  //输入r
+   return r*r*3.14;  //将r*r*3.14的值返回，通过sphere带回调用处
+}
+
+#include <iostream>  //预处理指令
+using namespace std;
+int main()  //定义主函数
+{
+   double r;  //变量r声明
+   cout<<"Please input radius.";  //屏幕显示“请输入半径”
+   cin>>r;  //输入r
+   double size=r*r*3.14;  //变量size声明
+   cout<<"The size is"<<size<<endl;  //输出size
