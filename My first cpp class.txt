@@ -1,25 +1,26 @@
-#include <iostream>  //Ô¤´¦ÀíÖ¸Áî
+#include <iostream>  //é¢„å¤„ç†æŒ‡ä»¤
 using namespace std;
-double sphere();  //ÉùÃ÷sphereº¯Êı
-int main()  //¶¨ÒåÖ÷º¯Êı
+double sphere();  //å£°æ˜sphereå‡½æ•°
+int main()  //å®šä¹‰ä¸»å‡½æ•°
 {
-   double result=sphere();  //µ÷ÓÃsphereº¯Êı
-   cout<<"size="<<result<<"\n";  //Êä³ösizeµÄÖµ
+   double result=sphere();  //è°ƒç”¨sphereå‡½æ•°
+   cout<<"size="<<result<<"\n";  //è¾“å‡ºsizeçš„å€¼
 }
-double sphere()  //¶¨Òåsphereº¯Êı£¬º¯ÊıÖµÎªË«¾«¶ÈĞÍ
+double sphere()  //å®šä¹‰sphereå‡½æ•°ï¼Œå‡½æ•°å€¼ä¸ºåŒç²¾åº¦å‹
 {
-   cout<<"Please input radius.";  //ÆÁÄ»ÏÔÊ¾¡°ÇëÊäÈë°ë¾¶¡±
-   double r;  //±äÁ¿rÉùÃ÷
-   cin>>r;  //ÊäÈër
-   return r*r*3.14;  //½«r*r*3.14µÄÖµ·µ»Ø£¬Í¨¹ısphere´ø»Øµ÷ÓÃ´¦
+   cout<<"Please input radius.";  //å±å¹•æ˜¾ç¤ºâ€œè¯·è¾“å…¥åŠå¾„â€
+   double r;  //å˜é‡rå£°æ˜
+   cin>>r;  //è¾“å…¥r
+   return r*r*3.14;  //å°†r*r*3.14çš„å€¼è¿”å›ï¼Œé€šè¿‡sphereå¸¦å›è°ƒç”¨å¤„
 }
 
-#include <iostream>  //Ô¤´¦ÀíÖ¸Áî
+#include <iostream>  //é¢„å¤„ç†æŒ‡ä»¤
 using namespace std;
-int main()  //¶¨ÒåÖ÷º¯Êı
+int main()  //å®šä¹‰ä¸»å‡½æ•°
 {
-   double r;  //±äÁ¿rÉùÃ÷
-   cout<<"Please input radius.";  //ÆÁÄ»ÏÔÊ¾¡°ÇëÊäÈë°ë¾¶¡±
-   cin>>r;  //ÊäÈër
-   double size=r*r*3.14;  //±äÁ¿sizeÉùÃ÷
-   cout<<"The size is"<<size<<endl;  //Êä³ösize
+   double r;  //å˜é‡rå£°æ˜
+   cout<<"Please input radius.";  //å±å¹•æ˜¾ç¤ºâ€œè¯·è¾“å…¥åŠå¾„â€
+   cin>>r;  //è¾“å…¥r
+   double size=r*r*3.14;  //å˜é‡sizeå£°æ˜
+   cout<<"The size is"<<size<<endl;  //è¾“å‡ºsize
+}
