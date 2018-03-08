@@ -1,0 +1,63 @@
+Conditional Statements
+The most normal type:
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	cout << "Please input an integer. x=" << endl; 
+	int x;  
+	cin >> x;  
+	if (x > 0 && x < 50) cout << "OK" << endl;
+	else
+		cout << "NOT OK" << endl;
+	return 0;
+}
+
+Line 8-10 can be replaced as  (x > 0 && x < 50) ? cout << "OK\n" : cout << "NOT OK\n";
+
+or simpler
+                               cout << (x > 0 && x < 50 ? "OK\n" : "NOT OK\n");
+
+or
+                               cout << ((x > 0 && x < 50) ? "" : "NOT") << "OK\n";
+
+
+
+As for
+if (x) a = 327981;
+else b = 327981;
+
+can be written as£º
+x ? a=327981 : b=327981;
+
+if a and b are the same type, it can be:
+(x?a:b) = 327981;
+
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	cout << "Please input a character. ch= " << endl;
+	int a = 2, b = 3;
+	char ch;
+	cin >> ch;
+	switch (ch)
+	{
+	case '-':b = -b;
+	case '+':a = a + b; break;
+	case '1':
+	case '2':
+	case '3': a = 1; break;
+	default:a = 0;
+	}
+	cout << "a=" << a << endl
+		<< "b=" << b << endl;
+	return 0;
+}
