@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+bool isPrime(int m);
+	int main()
+	{
+		cout << "please input an integer" << endl;
+		int m;
+		cin >> m;
+		if (isPrime(m))
+			cout << m << "is a prime" << endl;
+		else
+			cout << m << "is not a prime" << endl;
+		return 0;
+	}
+bool isPrime(int m)
+{
+	double sqm = sqrt(m*1.0);
+	for (int i = 2; i <= sqm;++i)
+	if (m%i == 0) return false;
+}
